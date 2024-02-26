@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "Fraunces", serif;
-  background-color: #faf8ec;
   height: 100vh;
   text-align: center;
 }
@@ -9,9 +8,8 @@ body {
 .main {
   margin: 0;
   font-family: "Fraunces", serif;
-  background-color: #faf8ec;
   padding: 1rem;
-  height: 100%;
+  height: 100vh;
 }
 
 .header {

@@ -40,9 +40,8 @@ function App() {
             <Form>
               <Form.Group className="mb-3">
                 <Form.Label>
-                  To get started, enter your email address to receive a magic
-                  link. You will be using the same email address each time you
-                  wish to log in.
+                  This a private photo gallery and can only be accessed by
+                  family members.
                 </Form.Label>
                 <Form.Control
                   type="email"

@@ -66,7 +66,7 @@ const CreatePhotoModal = ({ setImages }) => {
       .list(user?.id + "/", {
         limit: 100,
         offset: 0,
-        sortBy: { column: "created_at", order: "asc" },
+        sortBy: { column: "created_at", order: "desc" },
       });
 
     if (data !== null) {

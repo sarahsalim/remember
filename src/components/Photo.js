@@ -5,9 +5,9 @@ const Photo = (props) => {
     <div>
       <img
         src={props.url}
-        style={{ width: "100%", height: "auto", borderRadius: "16px" }}
+        style={{ width: "100%", height: "auto", borderRadius: "14px" }}
       />
-      <p className="description">{props.description}</p>
+      <p>{props.description}</p>
     </div>
   );
 };

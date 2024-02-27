@@ -8,16 +8,16 @@ const PhotoGallery = ({ images }) => {
     "https://istpqtthueulgfbeutoq.supabase.co/storage/v1/object/public/images/";
   return (
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 900: 4 }}>
-      <Masonry gutter="16px">
+      <Masonry gutter="14px">
         {images.map((image, i) => (
           <>
             <img
               key={i}
               src={CDNURL + user.id + "/" + image.name}
-              style={{ width: "100%", display: "block", borderRadius: "16px" }}
+              style={{ width: "100%", display: "block", borderRadius: "14px" }}
               alt=""
             />
-            <p style={{ fontSize: "16px" }}>{image.name}</p>
+            <p>{image.name}</p>
           </>
         ))}
       </Masonry>

@@ -30,18 +30,20 @@ function App() {
     const { error } = await supabase.auth.signOut();
   }
   return (
-    <div className="App main">
+    <div className="main">
       {user === null ? (
         <>
           <Container align="center" className="container-sm mt-4">
             <>
-              <h1>Welcome to 'Remembering Abah'</h1>
+              <h1 className="first-header">Welcome #fambam</h1>
             </>
             <Form>
               <Form.Group className="mb-3">
                 <Form.Label>
-                  This a private photo gallery and can only be accessed by
-                  family members.
+                  <h2 className="first-header-text">
+                    'Remembering Abah' is a private photo gallery. Only family
+                    members have access.
+                  </h2>
                 </Form.Label>
                 <Form.Control
                   type="email"

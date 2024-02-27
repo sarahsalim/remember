@@ -7,13 +7,13 @@ const customStyles = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "50%",
+    width: "fit-content",
     borderRadius: "8px",
     height: "fit-content",
-    padding: "32px",
+    padding: "20px",
   },
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
   },
 };
 
@@ -113,10 +113,12 @@ const CreatePhotoModal = ({ setImages }) => {
             display: "flex",
             width: "100%",
             justifyContent: "space-between",
-            marginBottom: "24px",
+            marginBottom: "16px",
           }}
         >
-          <h2 style={{ margin: 0 }}>Share a memory</h2>
+          <h2 className="first-header-text" style={{ margin: 0 }}>
+            Share a memory
+          </h2>
           <button onClick={closeModal} className="close">
             &times;
           </button>
@@ -125,18 +127,16 @@ const CreatePhotoModal = ({ setImages }) => {
         <form style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           <input type="file" onChange={(e) => handleChange(e)} />
           <p className="helper-text">
-            <span>
-              Accepts only JPEG format images measuring less than 50MB
-            </span>
+            <span>Only JPEG images less than 50MB in size</span>
           </p>
           <label for="textInput">Describe the special moment</label>
-          <textarea
+          <input
             onChange={(e) => handleChangeName(e)}
             type="text"
             value={name}
             className="input-field"
             id="textInput"
-          ></textarea>
+          ></input>
           <p className="helper-text">
             <span>Sadly no unique characters and emojis 😞</span>
           </p>

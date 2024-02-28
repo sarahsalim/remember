@@ -2,20 +2,20 @@ import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "fit-content",
-    borderRadius: "8px",
-    height: "fit-content",
-    padding: "20px",
-  },
-  overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-  },
-};
+// const customStyles = {
+//   content: {
+//     top: "50%",
+//     left: "50%",
+//     transform: "translate(-50%, -50%)",
+//     width: "fit-content",
+//     borderRadius: "8px",
+//     height: "fit-content",
+//     padding: "20px",
+//   },
+//   overlay: {
+//     backgroundColor: "rgba(0, 0, 0, 0.7)",
+//   },
+// };
 
 const CreatePhotoModal = ({ setImages }) => {
   const user = useUser();
@@ -105,8 +105,9 @@ const CreatePhotoModal = ({ setImages }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={customStyles}
         contentLabel="Example Modal"
+        className="Modal"
+        overlayClassName="Overlay"
       >
         <div
           style={{

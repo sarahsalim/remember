@@ -33,7 +33,7 @@ function App() {
     <div className="main">
       {user === null ? (
         <>
-          <Container align="center" className="container-sm mt-4">
+          <Container align="center" className="container-sm mt-4 loginForm">
             <>
               <h1 className="first-header">Welcome #fambam</h1>
             </>

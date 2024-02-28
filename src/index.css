@@ -16,6 +16,7 @@ body {
   font-family: "Fraunces", serif;
   padding: 1rem;
   height: 100%;
+  background-color: #fffdf1;
 }
 
 .header {
@@ -64,12 +65,16 @@ p {
 
 form {
   display: flex;
-  max-width: 600px;
 }
 
 .form-control:hover:focus:active {
   border-color: #1f1d19;
   box-shadow: none;
+}
+
+.loginForm {
+  background-color: #fffdf1;
+  height: 100vh;
 }
 
 /* Button styles */
@@ -237,5 +242,29 @@ label {
   color: #1f1d19;
 }
 
-@media (max-width: 400px) {
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  border-radius: 8px;
+  height: fit-content;
+  padding: 32px;
+  background-color: #fffdf1;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 500px) {
+  .Modal {
+    width: 90%;
+  }
 }
